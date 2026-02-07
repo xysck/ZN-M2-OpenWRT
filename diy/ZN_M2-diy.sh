@@ -59,7 +59,7 @@ function git_sparse_clone() {
 # git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
 
 # 修改本地时间格式
-# sed -i 's/os.date()/os.date("%a %Y-%m-%d %H:%M:%S")/g' package/lean/autocore/files/*/index.htm
+sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S %A")/g' package/lean/autocore/files/*/index.htm
 
 # 修改版本为编译日期
 # date_version=$(date +"%y.%m.%d")
